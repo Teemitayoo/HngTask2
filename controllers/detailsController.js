@@ -28,7 +28,7 @@ if (req.body.operation_type.includes('add')
 const x= req.body.x;
 const y = req.body.y;
 const result = eval(x + operation_type + y);
-    res.status(201).json({
+    res.status(200).json({
         slackUsername: "Temitayodev",
         result,
         operation_type: operation
